@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/omlogo.png" alt="" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Front-end web developer</p>
+                <h1>Hi, I'm <span>O</span>mprakash <br> from india</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/om.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a student of Lovely Professional University. Pursuing computer science & engineering. I have taken engineering because I have a passion for it and the logistics business. and I am also interested in robotics. Love to create anything with coding skills..</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>App Development</span><br>Building Android apps</li>
+                            <li><span>Robotics Process Automation</span><br>Automation anywhere</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023 - current</span><br>Web app Development training at udemy</li>
+                            <li><span>2022 - 2023</span><br>Building Android apps</li>
+                            <li><span>2023 - current</span><br>Automation anywhere</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021</span><br>front-end training at LPU</li>
+                            <li><span>2021</span><br>Building Android apps training at LPU</li>
+                            <li><span>2022</span><br>Automation anywhere at LPU</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Web design</h2>
+                    <p>As a passionate and experienced web designer, I have created visually stunning and user-friendly websites for a diverse range of clients. My expertise in HTML, CSS, and JavaScript allows me to create responsive, mobile-friendly designs that meet the needs of my clients. I am constantly learning and staying up-to-date with the latest web design trends and techniques, and I have received recognition from several industry organizations for my work. I am confident in my ability to deliver high-quality web design solutions that exceed my clients' expectations.</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>Web dev</h2>
+                    <p>I have always been interested in the intersection of technology and design, and I became fascinated by the endless possibilities of the web. I am skilled in a variety of programming languages, including HTML, CSS, JavaScript, and PHP, and I am always looking to learn and grow as a developer. In my free time, I enjoy tinkering with new technologies and building side projects. I am passionate about creating functional and visually appealing websites that meet the needs of my clients.</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-regular fa-robot"></i>
+                    <h2>RPA</h2>
+                    <p>I am an RPA specialist with a passion for streamlining business processes and increasing efficiency. I have experience implementing and maintaining RPA solutions for a variety of organizations, including financial services, healthcare, and retail. My technical skills include proficiency in RPA software such as UiPath and Blue Prism, as well as programming languages such as Python and Java. When implementing RPA solutions, I follow a structured approach that includes analyzing business processes, identifying automation opportunities, and designing and testing the automation solution. I am committed to delivering high-quality RPA solutions that meet the needs of my clients and exceed their expectations</p>
+                    <a href="#">learn more</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/work-1.png" alt="">
+                        <div class="layer">
+                            <h3>Social Media App</h3>
+                            <p>The app connects you to the talented people around the world.
+                                 download it from play store</p>
+                                 <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> 
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-2.png" alt="">
+                        <div class="layer">
+                            <h3>Music App</h3>
+                            <p>The app connects you to the talented people around the world.
+                                 download it from play store</p>
+                                 <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> 
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-3.png" alt="">
+                        <div class="layer">
+                            <h3>Online shopping App</h3>
+                            <p>The app connects you to the talented people around the world.
+                                 download it from play store</p>
+                                 <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> 
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-le">
+                    <h1>Contact Me</h1>
+                    <p><i class="fa-regular fa-paper-plane-top"></i>omprakashpandit524@gmail.com</p>
+                    <p><i class="fa-regular fa-phone"></i>+91 9392744029</p>
+                    <div class="social-icon">
+                        <a href="https://www.instagram.com/its_me.omprakash/" class="insta" target="_blank">instagram</a>
+                        <a href="https://twitter.com/Omprakash939?s=09" class="twitter" target="_blank">twitter</a>
+                        <a href="https://www.linkedin.com/in/omprakash-pandit-4692601b7/" class="linkedin" target="_blank">linkedin</a>
+                        <a href="https://github.com/omprakash524" class="github" target="_blank">github</a>
+                    </div>
+                    <a href="images/CV_12010348.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet" action="">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" id="" cols="" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &#169; Omprakash.</p>
+        </div>
+    </div>
+    
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemeu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemeu.style.right = "0";
+        }
+        function closemenu(){
+            sidemeu.style.right = "-200px";
+        }
+    </script>
+
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzfsB_hDVVhIUkANB1iJ-78IwJ0M42jH13YAgiqdpFC46Tw1Xg6p5yvr2siDHyrqAjA/exec'
+    const form = document.forms['submit-to-google-sheet']
+
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },1000)
+            form.reset();
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
